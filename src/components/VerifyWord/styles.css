@@ -7,16 +7,19 @@
     display: block;
     color: var(--text-100);
     font-weight: bold;
+    background-color: var(--bg-200);
+    outline: none;
+    transition: background-color 0.5s;
 }
 
 .btn:focus {
-    outline: 2px solid var(--bg-100);
+    background-color: var(--bg-300);
 }
 
 .btn__verify {
-    background-color: lightgreen;
+    border: 2px solid lightgreen;
 }
 
 .btn__reload {
-    background-color: lightcoral;
+    border: 2px solid lightcoral;
 }

@@ -1,0 +1,90 @@
+.modal {
+    background-color: var(--accent-transparent);
+    padding: 1rem;
+    position: fixed;
+    top: var(--h-navbar);
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - var(--h-navbar));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
+}
+
+.modal__show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.intructions {
+    background-color: var(--bg-100);
+    max-width: 600px;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+    display: grid;
+    gap: 1rem;
+    overflow-y: scroll;
+    max-height: 100%;
+}
+
+.intructions::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.intructions::-webkit-scrollbar-thumb {
+    background: var(--primary-100);
+    border-radius: 10px;
+}
+
+.intructions::-webkit-scrollbar-track {
+    background: var(--accent-transparent);
+    border-radius: 10px;
+}
+
+.boxes {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    border: 1px solid transparent;
+}
+
+.yellow {
+    background-color: #ceb02c;
+}
+
+.green {
+    background-color: #6aaa64;
+}
+
+.grey {
+    background-color: #939b9f;
+}
+
+.center {
+    margin: auto;
+}
+
+.btn__intructions {
+    width: 150px;
+    background-color: var(--primary-100);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}

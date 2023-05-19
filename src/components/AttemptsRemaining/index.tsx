@@ -6,7 +6,16 @@ export const AttemptsRemaining = () => {
 
     return (
         <div className="attemptsRemaining">
-            te quedan <span>{5 - numberOfChange}</span>
+            te quedan{" "}
+            <span
+                style={
+                    5 - numberOfChange
+                        ? { color: "lightgreen" }
+                        : { color: "lightcoral" }
+                }
+            >
+                {5 - numberOfChange}
+            </span>
         </div>
     );
 };
