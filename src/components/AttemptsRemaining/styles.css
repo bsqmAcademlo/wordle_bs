@@ -1,0 +1,9 @@
+.attemptsRemaining {
+    text-align: center;
+}
+
+.attemptsRemaining span {
+    font-weight: bold;
+    display: inline-block;
+    font-size: 3rem;
+}

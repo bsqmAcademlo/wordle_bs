@@ -1,0 +1,43 @@
+.board__row--col {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    border: none;
+    outline: 2px solid transparent;
+    transition: outline 0.5s;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+}
+
+.letter-yellow {
+    background-color: #e4a81d;
+}
+
+.letter-green {
+    background-color: #43a047;
+}
+
+.letter-grey {
+    background-color: #757575;
+}
+
+.letter-null {
+    background-color: darkslategrey;
+}
+
+.board__row--disable {
+    cursor: auto;
+}
+
+.board__row--enable {
+    outline: 2px solid rgb(141, 175, 187);
+}
+
+.board__row--col:focus {
+    outline: 2px solid rgb(190, 238, 255);
+}
