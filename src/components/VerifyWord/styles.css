@@ -5,11 +5,18 @@
     cursor: pointer;
     margin: 0 auto;
     display: block;
+    color: var(--text-100);
+    font-weight: bold;
+}
+
+.btn:focus {
+    outline: 2px solid var(--bg-100);
 }
 
 .btn__verify {
     background-color: lightgreen;
 }
+
 .btn__reload {
     background-color: lightcoral;
 }

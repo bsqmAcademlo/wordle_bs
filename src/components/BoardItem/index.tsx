@@ -25,7 +25,7 @@ export const BoardItem = ({
     }, [letterGuess]);
 
     const handleBoardItem = (id: number, value: string) => {
-        handleSetBoard(id, value);
+        handleSetBoard(id, value.toLowerCase());
     };
 
     return disableInput ? (

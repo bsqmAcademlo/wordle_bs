@@ -11,7 +11,9 @@
     transition: outline 0.5s;
     text-align: center;
     font-weight: bold;
-    color: #fff;
+    color: var(--text-100);
+    transition: border 0.5s;
+    background-color: var(--bg-300);
 }
 
 .letter-yellow {
@@ -27,7 +29,8 @@
 }
 
 .letter-null {
-    background-color: darkslategrey;
+    /* background-color: var(--primary-200); */
+    /* border: 2px solid var(--primary-200); */
 }
 
 .board__row--disable {
@@ -35,9 +38,9 @@
 }
 
 .board__row--enable {
-    outline: 2px solid rgb(141, 175, 187);
+    border: 2px solid var(--primary-200);
 }
 
 .board__row--col:focus {
-    outline: 2px solid rgb(190, 238, 255);
+    border: 2px solid var(--text-100);
 }

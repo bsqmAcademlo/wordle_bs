@@ -2,6 +2,7 @@ import { useMemo, useState } from "react";
 import { Wordex } from "../Wordex";
 import "./styles.css";
 import { useWordleContext } from "../../hooks/useWordleContext";
+import { DarkMode } from "../DarkMode";
 
 export const Navbar = () => {
     const [showWordex, setShowWordex] = useState(false);
@@ -19,8 +20,7 @@ export const Navbar = () => {
                 <nav className="navbar">
                     <a href="#">WORDLBS</a>
                     <div className="navbar__icons">
-                        <i className="bx bx-moon"></i>
-                        <i className="bx bx-sun"></i>
+                        <DarkMode />
                         <i
                             className="bx bxs-game"
                             onClick={() => setShowWordex(!showWordex)}

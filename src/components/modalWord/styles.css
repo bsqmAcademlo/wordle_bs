@@ -1,6 +1,6 @@
 .modalWorl {
     position: fixed;
-    background-color: #00000090;
+    background-color: var(--accent-transparent);
     top: var(--h-navbar);
     left: 0;
     width: 100%;
@@ -14,6 +14,7 @@
     visibility: hidden;
 
     transition: opacity 0.5s, visibility 0.5s;
+    color: var(--text-100);
 }
 
 .modalWorl__show {
@@ -22,7 +23,7 @@
 }
 
 .modalWord__info {
-    background-color: #000;
+    background-color: var(--bg-100);
     padding: 1rem;
     border-radius: 1rem;
     width: 80%;

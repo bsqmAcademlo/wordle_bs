@@ -1,5 +1,5 @@
 .content__navbar {
-    background-color: #000;
+    background-color: var(--bg-200);
     position: fixed;
     top: 0;
     left: 0;
