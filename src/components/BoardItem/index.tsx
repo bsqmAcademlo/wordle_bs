@@ -25,27 +25,21 @@ export const BoardItem = ({
     }, [letterGuess]);
 
     const handleBoardItem = (id: number, value: string) => {
-        handleSetBoard(id, value.toLowerCase());
+        value = value.toLowerCase();
+        handleSetBoard(id, value);
+        setValueInput(value);
     };
 
-    return disableInput ? (
+    return (
         <input
             type="text"
-            className={`board__row--col board__row--enable ${getColorLetter[stateLetter]}`}
-            onBlur={(e) => handleBoardItem(id, e.target.value)}
             maxLength={1}
             value={valueInput}
-            onChange={(e) => setValueInput(e.target.value)}
-        />
-    ) : (
-        <input
-            disabled
-            type="text"
-            className={`board__row--col board__row--disable ${getColorLetter[stateLetter]}`}
-            onBlur={(e) => handleBoardItem(id, e.target.value)}
-            max={1}
-            value={valueInput}
-            onChange={(e) => setValueInput(e.target.value)}
+            onChange={(e) => handleBoardItem(id, e.target.value)}
+            className={`board__row--col ${
+                disableInput ? "board__row--enable" : "board__row--disable"
+            } ${getColorLetter[stateLetter]}`}
+            disabled={!disableInput}
         />
     );
 };

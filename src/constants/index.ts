@@ -27,7 +27,7 @@ export const words: interfaceWord[] = [
     },
     {
         id: 4,
-        name: "Gatos",
+        name: "gatos",
         desc: "Mamíferos carnívoros de la familia Felidae, de tamaño mediano, con pelaje suave y cola larga.",
         state: false,
     },
